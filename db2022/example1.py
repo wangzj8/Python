@@ -30,6 +30,7 @@ try:
 
         # 第四步：提交上面的操作
         conn.commit()
+        print("complete")
 except pymysql.MySQLError as err:
     # 第四步：回滚（提交失败）  不需要增删改时，不使用回滚
     conn.rollback()
